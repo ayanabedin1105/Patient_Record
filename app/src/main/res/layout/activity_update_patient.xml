@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Edit text to enter first name-->
+    <EditText
+        android:id="@+id/idEdtfirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's First Name" />
+
+    <!--edit text to enter surname-->
+    <EditText
+        android:id="@+id/idEdtlastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's Last Name" />
+
+    <!--edit text to input age-->
+    <EditText
+        android:id="@+id/idEdtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's Age"
+        android:maxLength="2"/>
+
+    <!--edit text for visit purpose-->
+    <EditText
+        android:id="@+id/idEdtVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="What is the purpose to Visit?" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+
+        <!--button for updating patients record-->
+        <Button
+            android:id="@+id/idBtnUptRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/secondary_teal"
+            android:text="UPDATE RECORD"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+
+        <!--button for deleting a patients record-->
+    <Button
+        android:id="@+id/idBtnDelRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/secondary_teal"
+        android:text="DELETE RECORD"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Edit text to enter first name-->
+    <EditText
+        android:id="@+id/idEdtfirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's First Name" />
+
+    <!--edit text to enter surname-->
+    <EditText
+        android:id="@+id/idEdtlastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's Last Name" />
+
+    <!--edit text to input age-->
+    <EditText
+        android:id="@+id/idEdtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Patient's Age"
+        android:maxLength="2"/>
+
+    <!--edit text for visit purpose-->
+    <EditText
+        android:id="@+id/idEdtVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="What is the purpose to Visit?" />
+
+<!--    creating a new LinearLayout for adding the buttons side by side-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:orientation="horizontal">-->
+
+<!--    &lt;!&ndash;button for adding patients record&ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/idBtnAddRecord"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:backgroundTint="@color/secondary_teal"-->
+<!--        android:text="ADD PATIENT"-->
+<!--        android:layout_weight="1"/>-->
+
+<!--    &lt;!&ndash;new button for opening and viewing all patients details&ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/idBtnReadPatient"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:text="VIEW PATIENTS"-->
+<!--        android:backgroundTint="@color/secondary_teal"-->
+<!--        android:layout_weight="1"/>-->
+<!--</LinearLayout>-->
+
+    <!--button for adding patients record-->
+    <Button
+        android:id="@+id/idBtnAddRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/secondary_teal"
+        android:text="ADD PATIENT"/>
+
+    <!--        android:layout_weight="1"-->
+
+
+    <!--new button for opening and viewing all patients details-->
+    <Button
+        android:id="@+id/idBtnReadPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="VIEW PATIENTS"
+        android:backgroundTint="@color/secondary_teal" />
+<!--        android:layout_weight="1"-->
+
+
+    <Button
+        android:id="@+id/EnableLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:text="SHOW LOCATION"
+        android:backgroundTint="@color/secondary_teal"/>
+<!--        android:layout_weight="1"-->
+
+</LinearLayout>
